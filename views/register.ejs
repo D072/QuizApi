@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+  .container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    width: 98%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+.text{
+  text-align: center;
+  font-size: 14px;
+}
+.text span a{
+  text-decoration: none;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h2>Login Form</h2>
+        <form method="post" action="/register">
+            <div class="form-group">
+                <label for="username">First Name:</label>
+                <input type="text" id="username" name="fname" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Last Name:</label>
+                <input type="text" id="password" name="lname" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
